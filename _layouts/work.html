@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{%- assign locale = site.data.locales[page.lang] -%}
+{%- assign work = page.work -%}
+{%- assign localized = work[page.lang] -%}
+{%- assign type = site.data.taxonomy.types[work.type] -%}
+{%- assign pdf = localized.pdf | default: work.pdf -%}
+{%- assign images = localized.images | default: work.images -%}
+<main id="main-content" class="container">
+  <article class="work-detail">
+    <p class="record-id"><strong>IwaXiv:{{ work.id }}</strong> [<a href="{{ locale.archive_path | relative_url }}#archive">{{ locale.archive_title }}</a>]</p>
+    <p class="posted">[{{ locale.published }} <time datetime="{{ work.published_on }}">{{ work.published_on }}</time>]</p>
+
+    <h1>{{ localized.title | escape }}</h1>
+    {% if localized.authors %}<p class="byline">{{ localized.authors | escape }}</p>{% endif %}
+    {% if pdf %}<p><a href="{{ pdf | relative_url | escape }}">PDF</a></p>{% endif %}
+    <p><strong>{{ locale.abstract }}:</strong> {{ localized.summary | escape }}</p>
+    <dl class="record-metadata">
+      <div>
+        <dt>{{ locale.type }}:</dt>
+        <dd>{{ type[page.lang] }}</dd>
+      </div>
+      <div>
+        <dt>{{ locale.topic }}:</dt>
+        <dd>{% include topics.html work=work locale=locale %}</dd>
+      </div>
+    </dl>
+    {% if images %}
+      <div class="work-images">
+        {% for image in images %}
+          {% assign page_label = locale.image_page | replace: '%n%', forloop.index %}
+          <img src="{{ image.src | relative_url | escape }}" alt="{{ image.alt[page.lang] | default: page_label | escape }}" loading="lazy">
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if localized.body %}
+      <div class="work-body">
+        {{ localized.body | markdownify }}
+      </div>
+    {% endif %}
+  </article>
+</main>

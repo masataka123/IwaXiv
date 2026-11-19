@@ -1,0 +1,9 @@
+<label>
+  {{ include.label }}
+  <select name="{{ include.name }}">
+    <option value="">{{ include.all }}</option>
+    {% for choice in include.choices %}
+      <option value="{{ choice[0] }}">{{ choice[1][page.lang] }}</option>
+    {% endfor %}
+  </select>
+</label>

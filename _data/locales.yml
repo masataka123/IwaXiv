@@ -1,0 +1,60 @@
+ja:
+  archive_path: /
+  language_name: 日本語
+  switch_language: 表示言語
+  skip: 本文へ移動
+  personal_archive: 個人アーカイブ
+  description: 論文、ノート・サーベイ、漫画、予想・問題・パズル、その他の資料を公開日順に掲載しています。
+  identifier_note: 各項目には固定番号 IwaXiv:YYMM.NNNN を付けています。YYMM は初回公開の年月、NNNN はその月の通し番号です。
+  archive_title: 一覧
+  filters: 掲載項目の絞り込み
+  type: 種類
+  topic: 分野
+  comments: 備考
+  abstract: 要旨
+  image_page: "%n%ページ目"
+  detail_link: 個別ページ
+  all_types: すべて
+  all_topics: すべて
+  total_singular: "全 %n% 件"
+  total_plural: "全 %n% 件"
+  count_singular: "%n%件"
+  count_plural: "%n%件"
+  month_index: 月別索引
+  no_results: この条件に該当する項目はありません。
+  clear: 絞り込みを解除
+  published: 公開日
+  date_format: "%Y年%-m月%-d日"
+  month_format: "%Y年%-m月"
+  back_to_top: ページの先頭
+  reference: 参考
+en:
+  archive_path: /en/
+  language_name: English
+  switch_language: Language
+  skip: Skip to content
+  personal_archive: Personal archive
+  description: Papers, notes and surveys, comics, conjectures, problems, puzzles, and other works, listed by date of publication.
+  identifier_note: "Each entry has a permanent identifier IwaXiv:YYMM.NNNN. YYMM is the year and month of first publication, and NNNN is the serial number within that month."
+  archive_title: Archive
+  filters: Filter entries
+  type: Type
+  topic: Subjects
+  comments: Comments
+  abstract: Abstract
+  image_page: "Page %n%"
+  detail_link: Entry
+  all_types: All types
+  all_topics: All subjects
+  total_singular: "Total of %n% entry"
+  total_plural: "Total of %n% entries"
+  count_singular: "%n% entry"
+  count_plural: "%n% entries"
+  month_index: Index by month
+  no_results: No entries match these filters.
+  clear: Clear filters
+  published: Published
+  date_format: "%a, %-d %b %Y"
+  month_format: "%b %Y"
+  back_to_top: Back to top
+  reference: Reference

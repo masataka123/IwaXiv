@@ -1,0 +1,4 @@
+{%- for topic in include.work.topics -%}
+  {%- assign label = site.data.taxonomy.topics[topic] -%}
+  <a href="{{ include.locale.archive_path | relative_url }}?topic={{ topic | url_encode }}#archive">{{ label[page.lang] }}</a>{% unless forloop.last %}, {% endunless %}
+{%- endfor -%}

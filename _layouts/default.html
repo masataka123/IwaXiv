@@ -1,0 +1,51 @@
+{%- assign locale = site.data.locales[page.lang] -%}
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{% if page.work %}{{ page.work[page.lang].summary | escape }}{% else %}{{ locale.description | escape }}{% endif %}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% for language in site.data.locales -%}
+    {%- assign language_code = language[0] -%}
+    {%- assign target = language[1].archive_path -%}
+    {%- if page.work -%}
+      {%- assign target = target | append: 'abs/' | append: page.work.id | append: '/' -%}
+    {%- endif %}
+    <link rel="alternate" hreflang="{{ language_code }}" href="{{ target | relative_url }}">
+  {% endfor -%}
+  {% unless page.work -%}
+    <script src="{{ '/assets/js/filters.js' | relative_url }}" defer></script>
+  {% endunless -%}
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">{{ locale.skip }}</a>
+  <header class="container site-header">
+    <a class="site-name" href="{{ locale.archive_path | relative_url }}">{{ site.title }}</a>
+    <p class="site-description">{{ locale.personal_archive }}</p>
+    <div class="header-navigation">
+      <a href="{{ locale.archive_path | relative_url }}#archive">{{ locale.archive_title }}</a>
+      <nav class="language-switch" aria-label="{{ locale.switch_language }}">
+        {% for language in site.data.locales -%}
+          {%- assign language_code = language[0] -%}
+          {%- assign language_info = language[1] -%}
+          {%- assign target = language_info.archive_path -%}
+          {%- if page.work -%}
+            {%- assign target = target | append: 'abs/' | append: page.work.id | append: '/' -%}
+          {%- endif %}
+          <a href="{{ target | relative_url }}" lang="{{ language_code }}" hreflang="{{ language_code }}"{% if language_code == page.lang %} aria-current="page"{% endif %}{% unless page.work %} data-preserve-filters{% endunless %}>{{ language_info.language_name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  {{ content }}
+
+  <footer class="container site-footer">
+    <a href="#top">{{ locale.back_to_top }}</a>
+    <span aria-hidden="true"> · </span>
+    {{ locale.reference }} <a href="https://jihaoliu.org/liuxiv.html">LiuXiv</a>
+  </footer>
+</body>
+</html>

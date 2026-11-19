@@ -1,0 +1,29 @@
+types:
+  paper:
+    ja: 論文
+    en: Paper
+  notes:
+    ja: ノート・サーベイ
+    en: Notes and surveys
+  comic:
+    ja: 漫画
+    en: Comic
+  puzzle:
+    ja: 予想・問題・パズル
+    en: Conjectures, problems, and puzzles
+  other:
+    ja: その他（ゲーム・ぬいぐるみ・神社）
+    en: Other works (games, plush toys, and shrines)
+topics:
+  AG:
+    ja: AG 代数幾何学
+    en: AG Algebraic Geometry
+  CV:
+    ja: CV 多変数複素解析
+    en: CV Several Complex Variables
+  DG:
+    ja: DG 微分幾何学
+    en: DG Differential Geometry
+  others:
+    ja: others その他
+    en: others Other topics

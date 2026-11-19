@@ -1,0 +1,9 @@
+title: IwaXiv
+baseurl: ""
+timezone: Asia/Tokyo
+markdown: kramdown
+liquid:
+  error_mode: strict
+  strict_filters: true
+exclude:
+  - README.md

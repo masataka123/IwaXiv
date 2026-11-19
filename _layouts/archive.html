@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{%- assign locale = site.data.locales[page.lang] -%}
+{%- assign taxonomy = site.data.taxonomy -%}
+{%- assign months = site.data.archive_months -%}
+{%- assign count = site.data.works | size -%}
+{%- assign total_format = locale.total_plural -%}
+{%- if count == 1 -%}{%- assign total_format = locale.total_singular -%}{%- endif -%}
+<main id="main-content" class="container">
+  <h1>{{ site.title }}</h1>
+  <div class="archive-intro">
+    <p>{{ locale.description }}</p>
+    <p>{{ locale.identifier_note }}</p>
+  </div>
+
+  <section id="archive" aria-label="{{ locale.archive_title }}">
+    <form class="filters" aria-label="{{ locale.filters }}" data-filters hidden>
+      {% include filter.html name="type" label=locale.type all=locale.all_types choices=taxonomy.types %}
+      {% include filter.html name="topic" label=locale.topic all=locale.all_topics choices=taxonomy.topics %}
+    </form>
+
+    <div class="archive-index">
+      <span role="status" data-total data-singular="{{ locale.total_singular }}" data-plural="{{ locale.total_plural }}">{{ total_format | replace: '%n%', count }}</span>
+      <nav aria-label="{{ locale.month_index }}" data-month-index{% if count == 0 %} hidden{% endif %}>
+        {% for month in months %}
+          {% assign month_start = month[0] | append: '-01' %}
+          <span data-jump="m{{ month[0] }}"><a href="#m{{ month[0] }}">{{ month_start | date: locale.month_format }}</a></span>
+        {% endfor %}
+      </nav>
+    </div>
+
+    {% assign position = 0 %}
+    {% for month in months %}
+      <div class="archive-month" id="m{{ month[0] }}" data-month>
+        {% for day in month[1] %}
+          {% assign day_count = day[1] | size %}
+          {% assign day_format = locale.count_plural %}
+          {% if day_count == 1 %}{% assign day_format = locale.count_singular %}{% endif %}
+          <section class="archive-day" aria-labelledby="d{{ day[0] }}" data-day>
+            <h2 id="d{{ day[0] }}">
+              <time datetime="{{ day[0] }}">{{ day[0] | date: locale.date_format }}</time>
+              <span data-day-count data-singular="{{ locale.count_singular }}" data-plural="{{ locale.count_plural }}">({{ day_format | replace: '%n%', day_count }})</span>
+            </h2>
+            <dl>
+              {% for work in day[1] %}
+                {% assign position = position | plus: 1 %}
+                {% assign localized = work[page.lang] %}
+                {% assign type = taxonomy.types[work.type] %}
+                {% assign pdf = localized.pdf | default: work.pdf %}
+                {% assign detail_path = locale.archive_path | append: 'abs/' | append: work.id | append: '/' | relative_url %}
+                <div class="entry" data-kind="{{ work.type }}" data-topics="{{ work.topics | join: ' ' }}">
+                  <dt>[{{ position }}] <a href="{{ detail_path }}">IwaXiv:{{ work.id }}</a> [<a href="{{ detail_path }}" aria-label="{{ locale.detail_link }} — {{ localized.title | escape }}">abs</a>{% if pdf %}, <a href="{{ pdf | relative_url | escape }}" aria-label="PDF — {{ localized.title | escape }}">pdf</a>{% endif %}]</dt>
+                  <dd>
+                    <h3>{{ localized.title | escape }}</h3>
+                    {% if localized.authors %}<p class="authors">{{ localized.authors | escape }}</p>{% endif %}
+                    <p class="entry-notes">{{ locale.comments }}: {{ localized.summary | escape }}</p>
+                    <p class="entry-notes"><span class="entry-type">{{ locale.type }}: <strong>{{ type[page.lang] }}</strong></span> {{ locale.topic }}: {% include topics.html work=work locale=locale %}</p>
+                  </dd>
+                </div>
+              {% endfor %}
+            </dl>
+          </section>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+    <p class="no-results" data-no-results{% if count > 0 %} hidden{% endif %}>
+      {{ locale.no_results }}
+      <button type="button" data-clear hidden>{{ locale.clear }}</button>
+    </p>
+  </section>
+</main>
