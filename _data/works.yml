@@ -11,3 +11,44 @@
     authors: Masataka Iwai
     title: An Exposition of Kobayashi’s Canonical Ampleness Conjecture
     summary: An exposition of OpenAI’s proof of canonical ampleness for Brody hyperbolic compact Kähler manifolds, with an emphasis on the second variation of holomorphic discs. 33 pages. Version 0.01.
+
+- id: "2611.0002"
+  published_on: "2026-11-19"
+  type: other
+  topics: [others]
+  images:
+    - src: /assets/works/2611.0002/research-office.webp
+      alt:
+        ja: 白い布を掛けたテーブルに、色とりどりのぬいぐるみが並んでいる。
+        en: Colorful plush toys arranged on a table covered with a white cloth.
+  ja:
+    title: 研究室の写真
+    summary: 研究室のテーブルに並んだぬいぐるみの写真。
+  en:
+    title: Plush Toys in the Research Office
+    summary: A photograph of the plush toys in the research office.
+
+- id: "2611.0003"
+  published_on: "2026-11-19"
+  type: comic
+  topics: [AG]
+  ja:
+    title: アバンダンス予想（漫画）
+    summary: OpenAI Math Catalog 034を題材に、対数アバンダンスと良い極小モデルを紹介する漫画。全2枚。
+    images:
+      - src: /assets/works/2611.0003/ja-01.webp
+        alt:
+          ja: 1枚目。対数標準因子のnef性と半豊富性、飯高ファイブレーションへのつながりを説明する8コマ。
+      - src: /assets/works/2611.0003/ja-02.webp
+        alt:
+          ja: 2枚目。図形を整理するたとえで、極小モデルプログラムと良い極小モデルを紹介する8コマ。
+  en:
+    title: The Abundance Conjecture (Comic)
+    summary: A two-page comic on log abundance and good minimal models, based on item 034 of the OpenAI Math Catalog.
+    images:
+      - src: /assets/works/2611.0003/en-01.webp
+        alt:
+          en: Page 1. Eight panels connect nefness and semiampleness of log canonical divisors to Iitaka fibrations.
+      - src: /assets/works/2611.0003/en-02.webp
+        alt:
+          en: Page 2. Eight panels use the analogy of simplifying shapes to introduce the minimal model program and good minimal models.
