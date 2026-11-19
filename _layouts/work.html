@@ -16,6 +16,7 @@ layout: default
     {% if localized.authors %}<p class="byline">{{ localized.authors | escape }}</p>{% endif %}
     {% if pdf %}<p><a href="{{ pdf | relative_url | escape }}">PDF</a></p>{% endif %}
     <p><strong>{{ locale.abstract }}:</strong> {{ localized.summary | escape }}</p>
+    {% if localized.comments %}<p><strong>{{ locale.comments }}:</strong> {{ localized.comments | escape }}</p>{% endif %}
     <dl class="record-metadata">
       <div>
         <dt>{{ locale.type }}:</dt>

@@ -15,7 +15,7 @@ bundle exec jekyll serve --livereload
 
 ## 作品を追加する
 
-[`_data/works.yml`](_data/works.yml) に1件追加します。公開日と固定番号、種類、題材を1回定義し、題名・著者・概要・本文を `ja` と `en` に記入します。`authors` は省略できます。概要は一覧の備考欄にも表示します。本文はMarkdownです。種類と題材のキーは [`_data/taxonomy.yml`](_data/taxonomy.yml) に定義されています。
+[`_data/works.yml`](_data/works.yml) に1件追加します。公開日と固定番号、種類、題材を1回定義し、題名・著者・概要・本文を `ja` と `en` に記入します。`authors` は省略できます。`comments` を指定すると一覧と個別ページの備考欄に表示され、省略すると一覧の備考欄に概要が表示されます。本文はMarkdownです。種類と題材のキーは [`_data/taxonomy.yml`](_data/taxonomy.yml) に定義されています。
 
 ```yaml
 - id: "2611.0004"
