@@ -22,6 +22,7 @@ bundle exec jekyll serve --livereload
   published_on: "2026-11-19"
   type: notes
   topics: [AG, DG]
+  human_verified: false
   ja:
     authors: 著者名
     title: 日本語のタイトル
@@ -42,7 +43,9 @@ bundle exec jekyll serve --livereload
 
 分野は `AG`（代数幾何学）、`CV`（多変数複素解析）、`DG`（微分幾何学）、`others`（その他）から指定します。絞り込みの指定はURLに残ります。たとえば `?type=notes&topic=DG` は微分幾何学のノート・サーベイに絞り込みます。
 
-AI論文は `type: paper` を指定します。`human_verified` は作品の共通項目で、`true` は「✓ 検証済み」、`false` は「× 未検証」、省略時は「– 記載なし」です。日英それぞれの一覧と個別ページに表示されます。
+全種類の作品で、人間による検証の状況を日英の一覧と個別ページに表示します。`human_verified` は作品の共通項目で、`true` は「✓ 検証済み」、`false` は「× 未検証」、省略時は「– 記載なし」です。
+
+AI論文は `type: paper` を指定します。
 
 アプリや開発プロジェクトは、作品の種類に `type: development` を指定します。
 

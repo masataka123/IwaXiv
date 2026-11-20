@@ -1,13 +1,11 @@
-{%- if include.work.type == 'paper' -%}
-  {%- assign labels = include.locale.human_verification -%}
-  {%- assign status = 'unspecified' -%}
-  {%- assign symbol = '–' -%}
-  {%- if include.work.human_verified == true -%}
-    {%- assign status = 'verified' -%}
-    {%- assign symbol = '✓' -%}
-  {%- elsif include.work.human_verified == false -%}
-    {%- assign status = 'unverified' -%}
-    {%- assign symbol = '×' -%}
-  {%- endif -%}
-  <p class="entry-notes">{{ labels.label }}: <strong data-human-verification="{{ status }}"><span aria-hidden="true">{{ symbol }}</span> {{ labels[status] }}</strong></p>
+{%- assign labels = include.locale.human_verification -%}
+{%- assign status = 'unspecified' -%}
+{%- assign symbol = '–' -%}
+{%- if include.work.human_verified == true -%}
+  {%- assign status = 'verified' -%}
+  {%- assign symbol = '✓' -%}
+{%- elsif include.work.human_verified == false -%}
+  {%- assign status = 'unverified' -%}
+  {%- assign symbol = '×' -%}
 {%- endif -%}
+<p class="entry-notes">{{ labels.label }}: <strong data-human-verification="{{ status }}"><span aria-hidden="true">{{ symbol }}</span> {{ labels[status] }}</strong></p>
