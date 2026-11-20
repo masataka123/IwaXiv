@@ -27,6 +27,12 @@ topics:
   DG:
     ja: DG 微分幾何学
     en: DG Differential Geometry
+  CO:
+    ja: CO 組合せ論
+    en: CO Combinatorics
+  GN:
+    ja: GN 一般位相幾何学
+    en: GN General Topology
   UM:
     ja: UM 学部数学
     en: UM Undergraduate Mathematics
