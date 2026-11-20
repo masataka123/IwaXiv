@@ -57,6 +57,7 @@ layout: default
                     {% if localized.authors %}<p class="authors">{{ localized.authors | escape }}</p>{% endif %}
                     <p class="entry-notes">{{ locale.comments }}: {{ localized.comments | default: localized.summary | escape }}</p>
                     <p class="entry-notes"><span class="entry-type">{{ locale.type }}: <strong>{{ type[page.lang] }}</strong></span> {{ locale.topic }}: {% include topics.html work=work locale=locale %}</p>
+                    {% include human-verification.html work=work locale=locale %}
                   </dd>
                 </div>
               {% endfor %}

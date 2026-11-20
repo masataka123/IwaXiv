@@ -4,7 +4,7 @@ ja:
   switch_language: 表示言語
   skip: 本文へ移動
   personal_archive: 個人アーカイブ
-  description: 論文、ノート・サーベイ、漫画、予想・問題・パズル、その他の資料を公開日順に掲載しています。
+  description: AI論文、ノート・サーベイ、漫画、予想・問題・パズル、その他の資料を公開日順に掲載しています。
   inspiration: IwaXivは、Jihao Liu氏の[LiuXiv](https://jihaoliu.org/liuxiv.html)を手本に作成しました。論文やノートを一つの個人アーカイブにまとめ、固定番号で参照できるようにする仕組みは、素晴らしいアイデアだと思います。
   identifier_note: 各項目には固定番号 IwaXiv:YYMM.NNNN を付けています。YYMM は初回公開の年月、NNNN はその月の通し番号です。
   archive_title: 一覧
@@ -12,6 +12,11 @@ ja:
   type: 種類
   topic: 分野
   comments: 備考
+  human_verification:
+    label: 人間による検証
+    verified: 検証済み
+    unverified: 未検証
+    unspecified: 記載なし
   abstract: 要旨
   image_page: "%n%ページ目"
   detail_link: 個別ページ
@@ -35,7 +40,7 @@ en:
   switch_language: Language
   skip: Skip to content
   personal_archive: Personal archive
-  description: Papers, notes and surveys, comics, conjectures, problems, puzzles, and other works, listed by date of publication.
+  description: AI papers, notes and surveys, comics, conjectures, problems, puzzles, and other works, listed by date of publication.
   inspiration: IwaXiv was modeled on Jihao Liu’s [LiuXiv](https://jihaoliu.org/liuxiv.html). Bringing papers and notes together in a personal archive and giving each entry a permanent identifier is a wonderful idea.
   identifier_note: "Each entry has a permanent identifier IwaXiv:YYMM.NNNN. YYMM is the year and month of first publication, and NNNN is the serial number within that month."
   archive_title: Archive
@@ -43,6 +48,11 @@ en:
   type: Type
   topic: Subjects
   comments: Comments
+  human_verification:
+    label: Human-verified
+    verified: Verified
+    unverified: Not verified
+    unspecified: Not reported
   abstract: Abstract
   image_page: "Page %n%"
   detail_link: Entry

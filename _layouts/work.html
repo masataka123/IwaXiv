@@ -27,6 +27,7 @@ layout: default
         <dd>{% include topics.html work=work locale=locale %}</dd>
       </div>
     </dl>
+    {% include human-verification.html work=work locale=locale %}
     {% if images %}
       <div class="work-images">
         {% for image in images %}

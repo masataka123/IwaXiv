@@ -144,6 +144,9 @@ h1 { margin: 0 0 0.85rem; font-size: 2rem; line-height: 1.2; }
 .authors, .entry-notes { margin: 0.1rem 0 0; }
 .entry-notes { font-size: 0.94rem; }
 .entry-type { display: inline-block; margin-right: 0.5em; }
+[data-human-verification] { color: var(--muted); }
+[data-human-verification="verified"] { color: #245737; }
+[data-human-verification="unverified"] { color: #a02722; }
 
 .no-results { margin: 1.1rem 0; }
 
