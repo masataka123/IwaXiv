@@ -2,7 +2,7 @@
   published_on: "2026-11-19"
   type: notes
   topics: [AG, CV, DG]
-  human_verified: false
+  human_verified: true
   pdf: /assets/works/2611.0001/Kobayashi_202611019.pdf
   ja:
     authors: 岩井 雅崇
@@ -19,7 +19,7 @@
   published_on: "2026-11-19"
   type: other
   topics: [others]
-  human_verified: false
+  human_verified: true
   images:
     - src: /assets/works/2611.0002/research-office.webp
       alt:
@@ -36,7 +36,7 @@
   published_on: "2026-11-19"
   type: comic
   topics: [AG]
-  human_verified: false
+  human_verified: true
   ja:
     title: アバンダンス予想（漫画）
     summary: OpenAI Math Catalog 034を題材に、対数アバンダンスと良い極小モデルを紹介する漫画。全2枚。

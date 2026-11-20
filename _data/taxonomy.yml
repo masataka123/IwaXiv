@@ -27,6 +27,12 @@ topics:
   DG:
     ja: DG 微分幾何学
     en: DG Differential Geometry
+  UM:
+    ja: UM 学部数学
+    en: UM Undergraduate Mathematics
+  HM:
+    ja: HM 高校数学
+    en: HM High School Mathematics
   others:
     ja: others その他
     en: others Other topics
