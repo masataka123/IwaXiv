@@ -5,6 +5,9 @@ types:
   notes:
     ja: ノート・サーベイ
     en: Notes and surveys
+  development:
+    ja: アプリ・開発
+    en: Apps and development
   comic:
     ja: 漫画
     en: Comic
