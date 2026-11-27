@@ -83,12 +83,12 @@
   ja:
     title: 俳句工房
     summary: Codexで句会と勉強会を開くための俳句工房。AIエージェントが作句・読解・添削・選句を分担し、勉強会では自分の読みを公開選評と照らし合わせます。
-    comments: この版では、句会と勉強会の役割分担と進め方を図と表で説明しています。Codexで試験データを使い、Pythonの補助コマンドの動作を確認しました。AIエージェントを使った句会・勉強会の通し実行は未確認です。
+    comments: "エージェントシステムを用いて, 俳句の句会と勉強会をし, 俳句を出すシステムを作りました. なお私は俳句を全く知らないです. 友人に見せて改良中です. "
     body: |
       [使い方（README）](https://github.com/masataka123/haiku-atelier/blob/7e59acc7c4713d89f9128a623f77bdc084d24368/README.md) · [対象コミット `7e59acc`](https://github.com/masataka123/haiku-atelier/commit/7e59acc7c4713d89f9128a623f77bdc084d24368)
   en:
     title: Haiku Atelier
     summary: A Codex project for running haiku workshops and study sessions. AI agents share the work of writing, reading, revising, and selecting poems. In study sessions, participants compare their own readings with published commentary.
-    comments: This version documents the roles and steps for both activities with diagrams and tables. The Python helper commands were tested in Codex using sample data. Full runs of both activities with AI agents remain to be checked.
+    comments: "I built an agent-based system that runs haiku workshops and study sessions and produces haiku. I know nothing about haiku myself. I’m showing it to a friend and making improvements."
     body: |
       [Usage guide (Japanese README)](https://github.com/masataka123/haiku-atelier/blob/7e59acc7c4713d89f9128a623f77bdc084d24368/README.md) · [Commit `7e59acc`](https://github.com/masataka123/haiku-atelier/commit/7e59acc7c4713d89f9128a623f77bdc084d24368)
