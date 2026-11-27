@@ -79,7 +79,7 @@
   published_on: "2026-11-27"
   type: development
   topics: [others]
-  human_verified: true
+  human_verified: false
   ja:
     title: 俳句工房
     summary: Codexで句会と勉強会を開くための俳句工房。AIエージェントが作句・読解・添削・選句を分担し、勉強会では自分の読みを公開選評と照らし合わせます。
