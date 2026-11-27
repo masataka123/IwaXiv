@@ -5,7 +5,7 @@ ja:
   skip: 本文へ移動
   personal_archive: 個人アーカイブ
   description: AI論文、ノート・サーベイ、アプリ・開発、漫画、予想・問題・パズル、その他の資料を公開日順に掲載しています。
-  inspiration: IwaXivは、Jihao Liu氏の[LiuXiv](https://jihaoliu.org/liuxiv.html)を手本に作成しました。論文やノートを一つの個人アーカイブにまとめ、固定番号で参照できるようにする仕組みは、素晴らしいアイデアだと思います。
+  inspiration: IwaXivは、Jihao Liu氏の[LiuXiv](https://jihaoliu.org/liuxiv.html)を手本に作成しました。この発想は本当に素晴らしいと思います。
   identifier_note: 各項目には固定番号 IwaXiv:YYMM.NNNN を付けています。YYMM は初回公開の年月、NNNN はその月の通し番号です。
   archive_title: 一覧
   filters: 掲載項目の絞り込み
@@ -41,7 +41,7 @@ en:
   skip: Skip to content
   personal_archive: Personal archive
   description: AI papers, notes and surveys, apps and development, comics, conjectures, problems, puzzles, and other works, listed by date of publication.
-  inspiration: IwaXiv was modeled on Jihao Liu’s [LiuXiv](https://jihaoliu.org/liuxiv.html). Bringing papers and notes together in a personal archive and giving each entry a permanent identifier is a wonderful idea.
+  inspiration: IwaXiv was modeled on Jihao Liu’s [LiuXiv](https://jihaoliu.org/liuxiv.html). I think it’s a brilliant idea.
   identifier_note: "Each entry has a permanent identifier IwaXiv:YYMM.NNNN. YYMM is the year and month of first publication, and NNNN is the serial number within that month."
   archive_title: Archive
   filters: Filter entries
