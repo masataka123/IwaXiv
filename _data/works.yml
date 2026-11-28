@@ -56,18 +56,6 @@
         alt:
           en: Page 2. Eight panels use the analogy of simplifying shapes to introduce the minimal model program and good minimal models.
 
-- id: "2611.0004"
-  published_on: "2026-11-19"
-  type: paper
-  topics: [AG]
-  human_verified: false
-  ja:
-    title: "【撤回済み】トーリックFano多様体に対するδ補正付きMiyaoka–Yau不等式の組合せ論的証明"
-    summary: この原稿は2026年11月28日に撤回されました。
-  en:
-    title: "[Withdrawn] A Combinatorial Proof of the Delta-Corrected Miyaoka–Yau Inequality for Toric Fano Varieties"
-    summary: This manuscript was withdrawn on November 28, 2026.
-
 - id: "2611.0005"
   published_on: "2026-11-27"
   type: development

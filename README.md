@@ -1,6 +1,6 @@
 # IwaXiv
 
-AI論文、ノート・サーベイ、アプリ・開発、漫画、予想・問題・パズル、その他の資料を公開日順に並べる、日英両対応の個人アーカイブです。
+ノート・サーベイ、アプリ・開発、漫画、予想・問題・パズル、その他の資料を公開日順に並べる、日英両対応の個人アーカイブです。
 
 ## 手元で確認する
 
@@ -15,10 +15,10 @@ bundle exec jekyll serve --livereload
 
 ## 作品を追加する
 
-[`_data/works.yml`](_data/works.yml) に1件追加します。公開日と固定番号、種類、題材を1回定義し、題名・著者・概要・本文を `ja` と `en` に記入します。岩井単独の論文・ノート・サーベイでは著者欄の `authors` を省略します。著者名を掲載する場合は日英それぞれに `authors` を記入します。`comments` を指定すると一覧と個別ページの備考欄に表示され、省略すると一覧の備考欄に概要が表示されます。本文はMarkdownです。種類と題材のキーは [`_data/taxonomy.yml`](_data/taxonomy.yml) に定義されています。
+[`_data/works.yml`](_data/works.yml) に1件追加します。公開日と固定番号、種類、題材を1回定義し、題名・著者・概要・本文を `ja` と `en` に記入します。岩井単独のノート・サーベイでは著者欄の `authors` を省略します。著者名を掲載する場合は日英それぞれに `authors` を記入します。`comments` を指定すると一覧と個別ページの備考欄に表示され、省略すると一覧の備考欄に概要が表示されます。本文はMarkdownです。種類と題材のキーは [`_data/taxonomy.yml`](_data/taxonomy.yml) に定義されています。
 
 ```yaml
-- id: "2611.0004"
+- id: "2611.0001"
   published_on: "2026-11-19"
   type: notes
   topics: [AG, DG]
@@ -37,13 +37,11 @@ bundle exec jekyll serve --livereload
       Write the English text here.
 ```
 
-固定番号の形式は `YYMM.NNNN` です。初回公開の年月に、その月の連番4桁を付けます。公開後は `id` と `published_on` を維持すると、個別ページのURLと掲載順が安定します。Jekyllが `/abs/2611.0004/` と `/en/abs/2611.0004/` を生成します。
+固定番号の形式は `YYMM.NNNN` です。初回公開の年月に、その月の連番4桁を付けます。公開後は `id` と `published_on` を維持すると、個別ページのURLと掲載順が安定します。Jekyllが `/abs/2611.0001/` と `/en/abs/2611.0001/` を生成します。
 
 分野は `AG`（代数幾何学）、`CV`（多変数複素解析）、`DG`（微分幾何学）、`CO`（組合せ論）、`GT`（幾何学的トポロジー）、`UM`（学部数学）、`HM`（高校数学）、`others`（その他）から指定します。`CO` と `GT` は arXiv の `math.CO` と `math.GT` に対応します。絞り込みの指定はURLに残ります。たとえば `?type=notes&topic=DG` は微分幾何学のノート・サーベイに絞り込みます。
 
 全種類の作品で、人間による検証の状況を日英の一覧と個別ページに表示します。`human_verified` は作品の共通項目で、`true` は「✓ 検証済み」、`false` は「× 未検証」、省略時は「– 記載なし」です。
-
-AI論文は `type: paper` を指定します。
 
 アプリや開発プロジェクトは、作品の種類に `type: development` を指定します。
 
@@ -59,13 +57,13 @@ AI論文は `type: paper` を指定します。
 次の例の `pdf` と `images` は作品項目の `type` や `topics` と同じ階層に追加します。どちらも任意です。
 
 ```yaml
-  pdf: /assets/works/2611.0004/book.pdf
+  pdf: /assets/works/2611.0001/book.pdf
   images:
-    - src: /assets/works/2611.0004/01.webp
+    - src: /assets/works/2611.0001/01.webp
       alt:
         ja: アリが紙の帯を歩きはじめる。
         en: An ant starts walking along a strip of paper.
-    - src: /assets/works/2611.0004/02.webp
+    - src: /assets/works/2611.0001/02.webp
       alt:
         ja: アリが帯のひねりを通り過ぎる。
         en: The ant walks past the twist in the strip.
