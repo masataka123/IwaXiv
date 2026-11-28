@@ -8,12 +8,12 @@
     authors: 岩井 雅崇
     title: 小林の標準束豊富性予想の解説
     summary: Brody双曲的なコンパクトKähler多様体の標準束の豊富性について、正則円板の第二変分を中心に、OpenAIの証明を解説する。付録ではKähler–Ricciフローを用いた証明も紹介する。2026年11月26日改訂。33ページ。v0.01。
-    comments: 岩井が頑張って論文を読んで作りました。arXivへの投稿を予定しています。
+    comments: OpenAI Math Catalogの項目051「小林の標準束豊富性予想」の解説です。岩井が頑張って論文を読んで作りました。arXivへの投稿を予定しています。
   en:
     authors: Masataka Iwai
     title: An Exposition of Kobayashi’s Canonical Ampleness Conjecture
     summary: An exposition of OpenAI’s proof of canonical ampleness for Brody hyperbolic compact Kähler manifolds, with an emphasis on the second variation of holomorphic discs. The appendix presents a proof using the Kähler–Ricci flow. Revised November 26, 2026. 33 pages. Version 0.01.
-    comments: Iwai put a lot of effort into reading the paper and writing this exposition. The author plans to submit this exposition to arXiv.
+    comments: This is an exposition of Kobayashi’s canonical ampleness conjecture, item 051 in the OpenAI Math Catalog. Iwai put a lot of effort into reading the paper and writing this exposition. The author plans to submit this exposition to arXiv.
 
 - id: "2611.0002"
   published_on: "2026-11-19"
